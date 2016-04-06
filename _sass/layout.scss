@@ -1,0 +1,73 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    padding: $spacing;
+}
+
+body > .inner {
+    height: 100%;
+    display: block;
+    padding: $spacing;
+    margin: auto;
+    background-color: $inner-color;
+
+    .top {
+        
+        clear: both;
+
+    	.right {
+    		float: right;
+
+    		#sharethis span {
+				-webkit-box-sizing: content-box;
+				-moz-box-sizing: content-box;
+				box-sizing: content-box;
+    		}
+    	}
+
+    	.left {
+    		float: left;
+
+            .menu {
+                position: relative;
+
+                &:visited {
+                    color: $menu-link-color;
+                    text-decoration: none;
+                }
+
+                &:hover {
+                    span {
+                        color: $menu-link-color-hover;
+                    }
+
+                    svg path {
+                        fill: $menu-link-color-hover;
+                    }
+                }
+
+                span {
+                    color: $menu-link-color;
+                    position: absolute;
+                    top: -12px;
+                    left: 38px;
+                }
+            }
+    	}
+    }
+
+    .bottom {
+        position: absolute;
+        bottom: $spacing * 2;
+    }
+
+	> .container {
+		margin-top: 20px;
+		&.center {
+			text-align: center;
+		}
+	}
+
+}

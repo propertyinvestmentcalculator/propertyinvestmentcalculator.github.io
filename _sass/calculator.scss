@@ -1,0 +1,61 @@
+.calculator {
+	img {
+		max-width: 170px;
+	}
+
+	.col-sm-7.input-group {
+		text-align: left;
+	}
+
+	.copy {
+		cursor: pointer;
+	}
+
+	.highlighted_box {
+		padding: 20px;
+	    border: solid 4px #b3b3b3;
+	    border-radius: 10px;
+	    margin-bottom: 20px;
+	    background-color: #e3e3e3;
+	}
+
+	#saved_properties table td{
+		padding: 3px 5px;
+	}
+
+	#saved_properties td.name {
+		width: 100%;
+	}
+
+	#saved_properties tr.active .btn-primary {
+		display: none;
+	}
+
+	#actions {
+		margin-top: 50px;
+		text-align: center;
+	}
+
+	#actions a.btn {
+		font-size: 1em;
+	}
+
+	/* toastr */
+	#toast-container>div {
+		opacity: 1;
+	}
+
+	#save_url {
+		width: 100%;
+	}
+
+}
+
+#save_message {
+	margin-top: $spacing;
+}
+
+small {
+	margin-top: $spacing * 2;
+	display: block;
+}

@@ -1,0 +1,8 @@
+# settings
+baseurl: /
+url: propertyinvestmentcalculator.com
+title: Property Investment Calculator
+description: A calculator for assessing the value of property investment opportunities.
+
+# Build settings
+markdown: kramdown
