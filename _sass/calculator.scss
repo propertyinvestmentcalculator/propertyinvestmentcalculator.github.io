@@ -1,4 +1,11 @@
-.calculator {
+body.calculator {
+	.inner {
+		height: auto;
+		min-height: 100%;
+	}
+}
+
+div.calculator {
 	img {
 		max-width: 170px;
 	}

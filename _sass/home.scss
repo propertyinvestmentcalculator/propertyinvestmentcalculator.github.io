@@ -1,30 +1,35 @@
-@media screen and (min-width: 768px){
-	.inner .container.center {
-		margin-top: 0px;
-		height: 100%;
-		display: flex;
-		justify-content: center;
+body.index {
+	@media screen and (min-width: 768px){
+		.inner .container.center {
+			margin-top: 0px;
+			height: 100%;
+			display: flex;
+			justify-content: center;
 
-		> .row {
-			align-self: center;
-			margin-top: -70px;
+			> .row {
+				align-self: center;
+			}
+
+			.home {
+				margin-top: -70px;
+			}
 		}
 	}
-}
 
-.inner .container.center {
+	.inner .container.center {
 
-	.home {
-		h1 {
-			text-transform: uppercase;
-		}
+		.home {
+			h1 {
+				text-transform: uppercase;
+			}
 
-		.calculatorMenu {
-			display: inline-block;
+			.calculatorMenu {
+				display: inline-block;
 
-			> a, > .btn-group-container {
-				display: block;
-				margin-bottom: $spacing;
+				> a, > .btn-group-container {
+					display: block;
+					margin-bottom: $spacing;
+				}
 			}
 		}
 	}

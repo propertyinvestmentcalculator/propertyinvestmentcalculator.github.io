@@ -40,7 +40,7 @@
                 stLight.options({publisher: "eae1a283-ef52-4475-b255-a42b82ac3752", doNotHash: false, doNotCopy: false, hashAddressBar: false});
             </script>
         </head>
-    <body>
+    <body {% if page.class %}class="{{ page.class | escape }}"{% endif %}>
         <div class="inner">
             <div class="top">
                 <div class="left">
