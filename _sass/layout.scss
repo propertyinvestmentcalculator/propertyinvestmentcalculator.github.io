@@ -7,6 +7,8 @@ body {
 }
 
 body > .inner {
+    position: relative;
+    margin-bottom: 15px;
     height: 100%;
     display: block;
     padding: $spacing;
@@ -60,7 +62,7 @@ body > .inner {
 
     .bottom {
         position: absolute;
-        bottom: $spacing * 2;
+        bottom: $spacing;
     }
 
 	> .container {
