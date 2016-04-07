@@ -57,6 +57,9 @@ $(document).ready(function(){
 		var url = property_investment_persister.build_url(data);
 		$('#save_url').val(url);
 		$('#save_message').removeClass('hidden');
+
+		// register google analytics event
+		ga('send', 'event', 'Calculator', 'Save');
 	});
 
 	// set toastr options
