@@ -247,7 +247,7 @@ PropertyInvestmentCalculator.prototype.calculate = function(){
 		var mortgage_repayments_monthly = Math.abs(PMT(mortgage_apr_monthly, mortgage_term_months, mortgage_principle));
 	}
 	else if(mortgage_type =='interest_only') {
-		var mortgage_repayments_monthly = total_investment * mortgage_apr_monthly;
+		var mortgage_repayments_monthly = mortgage_principle * mortgage_apr_monthly;
 	}
 	result_mortgage_repayments_monthly_elem.val(mortgage_repayments_monthly);
 
