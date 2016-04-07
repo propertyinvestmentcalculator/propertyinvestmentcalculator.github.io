@@ -1,0 +1,20 @@
+body.index {
+	.calculatorMenu {
+		display: inline-block;
+
+		// start new calculation button and saved property button groups
+		.startNewCalculation, .savedProperty {
+
+			padding-bottom: $spacing;
+
+			td {
+				vertical-align: top;
+			}
+
+			.btnText {
+				width: 100%;
+				white-space: normal;
+			}
+		}
+	}
+}

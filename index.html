@@ -4,14 +4,18 @@ permalink: /
 class: index
 ---
 
-<div class="home">
+<div class="index">
 	<img src="/images/houses.png">
 	<h1>Property Investment Calculator</h1>
 	<p>Easily forecast the finances for a potential property investment</p>
 	{% capture propertyListItem %}{% include _prototypes/property_list_item.html %}{% endcapture %}
-	<div id="calculatorMenu" class="calculatorMenu" data-prototype="{{ propertyListItem | xml_escape }}">
-		<a href="/calculator" class="btn btn-lg btn-primary startNewCalculation"><span class="glyphicon glyphicon-plus"></span> Start a New Calculation</a>
-	</div>
+	<table id="calculatorMenu" class="calculatorMenu" data-prototype="{{ propertyListItem | xml_escape }}">
+		<tr class="startNewCalculation">
+			<td colspan="3">
+				<a href="/calculator" class="btn btn-lg btn-primary btnText"><span class="glyphicon glyphicon-plus"></span> Start a New Calculation</a>
+			</td>
+		</tr>
+	</table>
 </div>
 
 <script type="text/javascript" src="/js/index.js"></script>

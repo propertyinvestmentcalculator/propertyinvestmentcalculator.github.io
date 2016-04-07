@@ -169,7 +169,7 @@ class: calculator
 							<input id="mortgage_valuation_basis" name="mortgage_valuation_basis" type="checkbox" data-off-class="btn-primary" data-on-class="btn-primary">
 							<script>
 							$('#mortgage_valuation_basis').checkboxpicker({
-				  			    offLabel: 'Bricks and Motar',
+				  			    offLabel: 'Market Value (recommended)',
 							    onLabel: 'Commercial'
 							});
 							</script>
@@ -417,8 +417,8 @@ class: calculator
 		<div class="col-md-12">
 			<div id="actions" class="highlighted_box">
 				<h3>Save This Property</h3>
-				<a href="#" class="btn btn-primary" data-toggle="modal" data-target="#save_modal">Save Your Results</a>
-				<a href="?defaults=false" class="btn btn-default">Clear Form and Start Again</a>
+				<a href="#" class="btn btn-primary" data-toggle="modal" data-target="#save_modal">Save This Property</a>
+				<a href="?defaults=false" class="btn btn-default">Start Again</a>
 			</div>
 		</div><!-- /col -->
 
@@ -430,7 +430,7 @@ class: calculator
 			<div class="modal-content">
 				<div class="modal-header">
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-					<h4 class="modal-title" id="save_modal_label">Save Your Results</h4>
+					<h4 class="modal-title" id="save_modal_label">Save This Property</h4>
 				</div>
 				<div class="modal-body">
 					<label for="property_name">Property Name</label>

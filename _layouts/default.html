@@ -42,26 +42,28 @@
         </head>
     <body {% if page.class %}class="{{ page.class | escape }}"{% endif %}>
         <div class="inner">
-            <div class="top">
-                <div class="left">
-                    <a href="/" class="menu">
-                        {% include menu.html %} <span>Menu</span>
-                    </a>
-                </div>
-                <div class="right">
-                    <span id="sharethis">
-                        <span class='st_facebook' displayText='Facebook'></span>
-                        <span class='st_twitter' displayText='Tweet'></span>
-                    </span>
-                </div>
+
+            <!-- top bar -->
+            <div class="top left">
+                <a href="/" class="menu">
+                    {% include menu.html %} <span>Menu</span>
+                </a>
             </div>
-            <div class="container center">
+            <div class="top right">
+                <span id="sharethis">
+                    <span class='st_facebook' displayText='Facebook'></span>
+                    <span class='st_twitter' displayText='Tweet'></span>
+                </span>
+            </div>
+
+            <!-- content -->
+            <div class="container content">
                 {{ content }}
             </div>
-            <div class="bottom">
-                <div class="left">
-                    Built By <a href="#" data-toggle="modal" data-target="#aboutCocept">Cocept</a>
-                </div>
+
+            <!-- bottom bar -->
+            <div class="bottom left">
+                Built By <a href="#" data-toggle="modal" data-target="#aboutCocept">Cocept</a>
             </div>
         </div>
 

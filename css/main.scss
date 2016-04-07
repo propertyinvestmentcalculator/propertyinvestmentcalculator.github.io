@@ -3,23 +3,26 @@
 @charset "utf-8";
 
 // Our variables
-$base-font-family:		"Droid Sans", Helvetica, Arial, sans-serif;
-$base-font-size:		20px;
-$base-font-weight:		400;
-$small-font-size:		$base-font-size * 0.875;
-$base-line-height:		1.5;
-$text-color:			#111;
-$background-color:		white;
-$brand-color:			#2a7ae2;
-$spacing:				15px;
-$inner-color:			#efeeed;
-$menu-link-color:		#000000;
-$menu-link-color-hover:	#666666;
+$base-font-family:			"Droid Sans", Helvetica, Arial, sans-serif;
+$base-font-size:			20px;
+$base-font-weight:			400;
+$small-font-size:			$base-font-size * 0.875;
+$base-line-height:			1.5;
+$text-color:				#111;
+$background-color:			white;
+$brand-color:				#2a7ae2;
+$spacing:					15px;
+$inner-background-color:	#efeeed;
+$menu-link-color:			#000000;
+$menu-link-color-hover:		#666666;
+
+// tbs breakpoints
+$small-min: 	768px;
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
         "base",
         "layout",
-        "home",
+        "index",
         "calculator"
 ;
